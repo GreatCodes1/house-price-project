@@ -12,8 +12,8 @@ st.write("Provide the house details below to estimate its market price.")
 # LOAD MODEL & SCALER
 # ===========================
 try:
-    model = joblib.load("../models/house_price_model.pkl")
-    scaler = joblib.load("../models/scaler.pkl")
+    model = joblib.load("models/house_price_model.pkl")
+    scaler = joblib.load("models/scaler.pkl")
 except FileNotFoundError:
     st.error("Model files not found. Make sure the folder structure is correct:\n"
              "`project/models/house_price_model.pkl`\n"
